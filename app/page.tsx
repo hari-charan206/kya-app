@@ -16,7 +16,6 @@ export default function Home() {
           <div className="flex items-center gap-6 text-sm">
             <Link href="/docs" className="text-zinc-600 hover:text-zinc-900 transition-colors">Docs</Link>
             <Link href="/how-it-works" className="text-zinc-600 hover:text-zinc-900 transition-colors">How it works</Link>
-            <Link href="/pricing" className="text-zinc-600 hover:text-zinc-900 transition-colors">Pricing</Link>
             <Link href="/auth/login" className="text-zinc-600 hover:text-zinc-900 transition-colors">Log in</Link>
             <Link href="/auth/sign-up" className="bg-zinc-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-800 transition-colors">
               Get started
