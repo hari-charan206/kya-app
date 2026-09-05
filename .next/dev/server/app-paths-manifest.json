@@ -1,0 +1,17 @@
+{
+  "/api/agents/[id]/route": "app/api/agents/[id]/route.js",
+  "/api/agents/route": "app/api/agents/route.js",
+  "/api/audit-log/route": "app/api/audit-log/route.js",
+  "/dashboard/agent-view/page": "app/dashboard/agent-view/page.js",
+  "/dashboard/audit/page": "app/dashboard/audit/page.js",
+  "/dashboard/flags/page": "app/dashboard/flags/page.js",
+  "/dashboard/monitor/page": "app/dashboard/monitor/page.js",
+  "/dashboard/network/page": "app/dashboard/network/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/pending-credentials/page": "app/dashboard/pending-credentials/page.js",
+  "/dashboard/settings/page": "app/dashboard/settings/page.js",
+  "/developer/credentials/page": "app/developer/credentials/page.js",
+  "/developer/events/page": "app/developer/events/page.js",
+  "/developer/page": "app/developer/page.js",
+  "/developer/sandbox/page": "app/developer/sandbox/page.js"
+}

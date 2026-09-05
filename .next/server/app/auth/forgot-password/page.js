@@ -1,0 +1,13 @@
+var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/auth/forgot-password/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__1nyftn8._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__17iibja._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0wtj_uh._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__1o2_cfz._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__1-pub-z._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_0wpq8j3._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_0q-w892.js")
+R.c("server/chunks/ssr/_next-internal_server_app_auth_forgot-password_page_actions_0f69f0t.js")
+R.m(42444)
+module.exports=R.m(42444).exports

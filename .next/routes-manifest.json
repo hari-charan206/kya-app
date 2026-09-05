@@ -1,0 +1,376 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/agents/[id]",
+      "regex": "^/api/agents/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/agents/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/agents/[id]/status",
+      "regex": "^/api/agents/([^/]+?)/status(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/agents/(?<nxtPid>[^/]+?)/status(?:/)?$"
+    },
+    {
+      "page": "/api/flags/[id]",
+      "regex": "^/api/flags/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/flags/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/flags/[id]/resolve",
+      "regex": "^/api/flags/([^/]+?)/resolve(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/flags/(?<nxtPid>[^/]+?)/resolve(?:/)?$"
+    },
+    {
+      "page": "/api/pending-credentials/[id]/approve",
+      "regex": "^/api/pending\\-credentials/([^/]+?)/approve(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/pending\\-credentials/(?<nxtPid>[^/]+?)/approve(?:/)?$"
+    },
+    {
+      "page": "/api/pending-credentials/[id]/reject",
+      "regex": "^/api/pending\\-credentials/([^/]+?)/reject(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/pending\\-credentials/(?<nxtPid>[^/]+?)/reject(?:/)?$"
+    },
+    {
+      "page": "/dashboard/agents/[id]",
+      "regex": "^/dashboard/agents/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/dashboard/agents/(?<nxtPid>[^/]+?)(?:/)?$",
+      "prefetchSegmentDataRoutes": [
+        {
+          "destination": "/dashboard/agents/[id].segments/dashboard/agents/$d$id$segment",
+          "source": "^/dashboard/agents/(?<nxtPid>[^/]+?)\\.segments/dashboard/agents/\\$d\\$id(?<segment>/__PAGE__\\.segment\\.rsc|\\.segment\\.rsc)(?:/)?$",
+          "routeKeys": {
+            "nxtPid": "nxtPid"
+          }
+        }
+      ]
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/agents",
+      "regex": "^/api/agents(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/agents(?:/)?$"
+    },
+    {
+      "page": "/api/anomaly-check",
+      "regex": "^/api/anomaly\\-check(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/anomaly\\-check(?:/)?$"
+    },
+    {
+      "page": "/api/audit-log",
+      "regex": "^/api/audit\\-log(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/audit\\-log(?:/)?$"
+    },
+    {
+      "page": "/api/credentials",
+      "regex": "^/api/credentials(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/credentials(?:/)?$"
+    },
+    {
+      "page": "/api/network",
+      "regex": "^/api/network(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/network(?:/)?$"
+    },
+    {
+      "page": "/api/policy-settings",
+      "regex": "^/api/policy\\-settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/policy\\-settings(?:/)?$"
+    },
+    {
+      "page": "/api/revoke",
+      "regex": "^/api/revoke(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/revoke(?:/)?$"
+    },
+    {
+      "page": "/api/system-outage",
+      "regex": "^/api/system\\-outage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/system\\-outage(?:/)?$"
+    },
+    {
+      "page": "/api/verify",
+      "regex": "^/api/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/verify(?:/)?$"
+    },
+    {
+      "page": "/auth/confirm",
+      "regex": "^/auth/confirm(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/confirm(?:/)?$"
+    },
+    {
+      "page": "/auth/error",
+      "regex": "^/auth/error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/error(?:/)?$"
+    },
+    {
+      "page": "/auth/forgot-password",
+      "regex": "^/auth/forgot\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/forgot\\-password(?:/)?$"
+    },
+    {
+      "page": "/auth/login",
+      "regex": "^/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/login(?:/)?$"
+    },
+    {
+      "page": "/auth/sign-up",
+      "regex": "^/auth/sign\\-up(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/sign\\-up(?:/)?$"
+    },
+    {
+      "page": "/auth/sign-up-success",
+      "regex": "^/auth/sign\\-up\\-success(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/sign\\-up\\-success(?:/)?$"
+    },
+    {
+      "page": "/auth/update-password",
+      "regex": "^/auth/update\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/update\\-password(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/dashboard/agent-view",
+      "regex": "^/dashboard/agent\\-view(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/agent\\-view(?:/)?$"
+    },
+    {
+      "page": "/dashboard/agents",
+      "regex": "^/dashboard/agents(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/agents(?:/)?$"
+    },
+    {
+      "page": "/dashboard/agents/new",
+      "regex": "^/dashboard/agents/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/agents/new(?:/)?$"
+    },
+    {
+      "page": "/dashboard/audit",
+      "regex": "^/dashboard/audit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/audit(?:/)?$"
+    },
+    {
+      "page": "/dashboard/credentials/new",
+      "regex": "^/dashboard/credentials/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/credentials/new(?:/)?$"
+    },
+    {
+      "page": "/dashboard/flags",
+      "regex": "^/dashboard/flags(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/flags(?:/)?$"
+    },
+    {
+      "page": "/dashboard/monitor",
+      "regex": "^/dashboard/monitor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/monitor(?:/)?$"
+    },
+    {
+      "page": "/dashboard/network",
+      "regex": "^/dashboard/network(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/network(?:/)?$"
+    },
+    {
+      "page": "/dashboard/pending-credentials",
+      "regex": "^/dashboard/pending\\-credentials(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/pending\\-credentials(?:/)?$"
+    },
+    {
+      "page": "/dashboard/settings",
+      "regex": "^/dashboard/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/settings(?:/)?$"
+    },
+    {
+      "page": "/developer",
+      "regex": "^/developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/developer(?:/)?$"
+    },
+    {
+      "page": "/developer/credentials",
+      "regex": "^/developer/credentials(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/developer/credentials(?:/)?$"
+    },
+    {
+      "page": "/developer/events",
+      "regex": "^/developer/events(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/developer/events(?:/)?$"
+    },
+    {
+      "page": "/developer/sandbox",
+      "regex": "^/developer/sandbox(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/developer/sandbox(?:/)?$"
+    },
+    {
+      "page": "/docs",
+      "regex": "^/docs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/how-it-works",
+      "regex": "^/how\\-it\\-works(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/how\\-it\\-works(?:/)?$"
+    },
+    {
+      "page": "/opengraph-image.png",
+      "regex": "^/opengraph\\-image\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/opengraph\\-image\\.png(?:/)?$"
+    },
+    {
+      "page": "/pricing",
+      "regex": "^/pricing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pricing(?:/)?$"
+    },
+    {
+      "page": "/protected",
+      "regex": "^/protected(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/protected(?:/)?$"
+    },
+    {
+      "page": "/runbook",
+      "regex": "^/runbook(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/runbook(?:/)?$"
+    },
+    {
+      "page": "/status",
+      "regex": "^/status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/status(?:/)?$"
+    },
+    {
+      "page": "/twitter-image.png",
+      "regex": "^/twitter\\-image\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/twitter\\-image\\.png(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": true,
+    "dynamicRSCPrerender": true
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "ppr": {
+    "chain": {
+      "headers": {
+        "next-resume": "1"
+      }
+    }
+  }
+}
