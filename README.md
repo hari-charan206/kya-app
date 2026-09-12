@@ -2,9 +2,7 @@
 
 A robust, production-ready administrative control center designed to monitor, audit, and govern autonomous AI agents interacting with financial transaction rails. Built with **Next.js 16 (App Router)** and **Supabase**.
 
----
-
-## 🚀 Features
+🚀 Features
 
 * **Secure Authentication:** Powered by Supabase Auth with server-side session cookies and role-based access control (`senior_admin`, etc.).
 * **Real-time Analytics & Monitoring:** Live tracking of active agents, total financial exposure, 24-hour transaction charts, and live anomaly streams.
@@ -80,9 +78,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
----
 
-## 🚀 Deployment on Vercel
+🚀 Deployment on Vercel
 
 This application is optimized for deployment on Vercel.
 
