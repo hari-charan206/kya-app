@@ -21,6 +21,6 @@ export async function logAudit({
     actor,
     details: details ?? null,
   })
-  
+ 
   if (error) console.error('Audit log write failed:', error.message)
 }
