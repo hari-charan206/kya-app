@@ -27,6 +27,3 @@ export async function AuthButton() {
     </div>
   );
 }
-
-
-it can 
